@@ -395,7 +395,94 @@ th {
 }
 
 * {
-  -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
   box-sizing: border-box;
+}
+
+body {
+  width: 1280px;
+  margin: 0 auto;
+}
+
+.sunburst-body {
+  overflow: hidden;
+  margin: 0 auto;
+}
+
+.sunburst {
+  width: 1280px;
+  height: 600px;
+  margin: 0;
+  overflow: hidden;
+  background: #ffdeee;
+}
+.sunburst .burst-radius {
+  width: 100vw;
+  height: 100vh;
+  padding-top: 1453.332px;
+  margin: -1079.988px 0 0 -519.996px;
+}
+.sunburst .beam {
+  display: block;
+  width: 0;
+  height: 0;
+  margin: -240px 0 0 0;
+  border-width: 120px 1333.332px;
+  border-color: transparent #a2a2a2;
+  border-style: solid;
+}
+.sunburst .beam:nth-child(1) {
+  -moz-transform: rotate(20deg);
+  -ms-transform: rotate(20deg);
+  -webkit-transform: rotate(20deg);
+  transform: rotate(20deg);
+}
+.sunburst .beam:nth-child(2) {
+  -moz-transform: rotate(40deg);
+  -ms-transform: rotate(40deg);
+  -webkit-transform: rotate(40deg);
+  transform: rotate(40deg);
+}
+.sunburst .beam:nth-child(3) {
+  -moz-transform: rotate(60deg);
+  -ms-transform: rotate(60deg);
+  -webkit-transform: rotate(60deg);
+  transform: rotate(60deg);
+}
+.sunburst .beam:nth-child(4) {
+  -moz-transform: rotate(80deg);
+  -ms-transform: rotate(80deg);
+  -webkit-transform: rotate(80deg);
+  transform: rotate(80deg);
+}
+.sunburst .beam:nth-child(5) {
+  -moz-transform: rotate(100deg);
+  -ms-transform: rotate(100deg);
+  -webkit-transform: rotate(100deg);
+  transform: rotate(100deg);
+}
+.sunburst .beam:nth-child(6) {
+  -moz-transform: rotate(120deg);
+  -ms-transform: rotate(120deg);
+  -webkit-transform: rotate(120deg);
+  transform: rotate(120deg);
+}
+.sunburst .beam:nth-child(7) {
+  -moz-transform: rotate(140deg);
+  -ms-transform: rotate(140deg);
+  -webkit-transform: rotate(140deg);
+  transform: rotate(140deg);
+}
+.sunburst .beam:nth-child(8) {
+  -moz-transform: rotate(160deg);
+  -ms-transform: rotate(160deg);
+  -webkit-transform: rotate(160deg);
+  transform: rotate(160deg);
+}
+.sunburst .beam:nth-child(9) {
+  -moz-transform: rotate(180deg);
+  -ms-transform: rotate(180deg);
+  -webkit-transform: rotate(180deg);
+  transform: rotate(180deg);
 }

@@ -1,0 +1,59 @@
+@import "compass";
+
+$degree: 20deg;
+
+$maxBeam: 9;
+$beamWidth: 120px;
+$beamY: -1 * $beamWidth * 8.9999;
+$beamX: -1 * $beamWidth * 4.3333;
+$beamPaddingX: $beamWidth * 12.1111;
+$beamLength: $beamWidth * 11.1111;
+$beamPosition: -2 * $beamWidth;
+.sunburst-body {
+	overflow: hidden;
+	margin: 0 auto;
+}
+
+.sunburst {
+	width: 1280px;
+	height: 600px;
+	margin: 0;
+	overflow: hidden;
+	background: #ffdeee;
+	.burst-radius {
+		width: 100vw;
+		height: 100vh;
+		padding-top: $beamPaddingX;
+		margin: $beamY 0 0 $beamX;
+		// to enable animation rotation of the sun burst, the match needed to be updated.
+		//@include animation-name(rotate1);
+		//@include animation-duration(2s);
+		//@include animation-iteration-count(infinite);
+		//@include animation-timing-function(linear);
+	}
+	.beam {
+		display: block;
+		width: 0;
+		height: 0;
+		margin: $beamPosition 0 0 0;
+		border: {
+			width: $beamWidth $beamLength;
+			color: transparent #a2a2a2;
+			style: solid;
+		}
+		@for $i from 1 through $maxBeam {
+			&:nth-child(#{$i}) {
+				@include transform(rotate($i * $degree));
+			}
+		}
+	}
+}
+
+//@include keyframes(rotate1) {
+//	from {
+//		@include transform(rotate(0deg));
+//	}
+//	to {
+//		@include transform(rotate(20deg));
+//	}
+//}

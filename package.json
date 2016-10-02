@@ -1,0 +1,11 @@
+{
+  "name": "olivia.zhu",
+  "version": "1.0.0",
+  "description": "A website dedicated to my daughter.",
+  "main": "index.html",
+  "author": "Daniel Zhu",
+  "license": "MIT",
+  "dependencies": {
+    "jquery-timelineme": "^0.1.7"
+  }
+}

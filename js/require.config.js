@@ -35,6 +35,13 @@ require.config({
 
 		json2: {
 			exports: 'JSON'
+		},
+
+		timelineme: {
+			deps: [
+				'jquery'
+			],
+			exports: "Timelineme"
 		}
 	},
 
@@ -53,6 +60,7 @@ require.config({
 		'marionette': 'bower_components/marionette/lib/backbone.marionette',
 		'radio': 'bower_components/backbone.radio/build/backbone.radio.min',
 		'hbs': 'bower_components/require-handlebars-plugin/hbs',
-		'json2': 'bower_components/json2/json2'
+		'json2': 'bower_components/json2/json2',
+		'timelineme': "node_modules/jquery-timelineme/src/jquery.timelineMe"
 	}
 });
